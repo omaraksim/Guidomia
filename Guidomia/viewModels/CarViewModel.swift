@@ -41,4 +41,12 @@ class CarViewModel {
     var rating: Int {
         return car.rating
     }
+    
+    var pros: [String] {
+        car.prosList.filter{ !$0.isEmpty }
+    }
+    
+    var cons: [String] {
+        car.consList.filter{ !$0.isEmpty }
+    }
 }

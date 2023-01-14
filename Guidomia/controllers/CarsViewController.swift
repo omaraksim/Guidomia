@@ -19,6 +19,7 @@ class CarsViewController: UIViewController {
         carsViewModel.load {
             DispatchQueue.main.async {
                 self.carsTableView.reloadData()
+                self.carsTableView.selectRow(at: IndexPath(row: 0, section: 1), animated: true, scrollPosition: .top)
             }
         }
     }
@@ -38,6 +39,12 @@ extension CarsViewController: UITableViewDelegate {
             return 250
         }
         return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        UIView.animate(withDuration: 0.3) {
+            tableView.performBatchUpdates(nil)
+        }
     }
     
 }

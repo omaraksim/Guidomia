@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BulletView" customModule="Guidomia" customModuleProvider="target">
+            <connections>
+                <outlet property="bullet" destination="NJF-yC-jbn" id="ecx-lS-z48"/>
+                <outlet property="container" destination="iN0-l3-epB" id="PrB-CM-UbZ"/>
+                <outlet property="textLabel" destination="ei4-lq-tRL" id="sT3-oi-ku4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="460" height="103"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Gx-Zp-djF">
+                    <rect key="frame" x="48" y="0.0" width="412" height="103"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="•" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJF-yC-jbn">
+                            <rect key="frame" x="0.0" y="0.0" width="20" height="103"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="Iet-J4-9GH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="30"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ei4-lq-tRL">
+                            <rect key="frame" x="20" y="0.0" width="392" height="103"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="7Gx-Zp-djF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="SSr-DT-Ojw"/>
+                <constraint firstAttribute="bottom" secondItem="7Gx-Zp-djF" secondAttribute="bottom" id="Tvv-Zv-dsv"/>
+                <constraint firstAttribute="trailing" secondItem="7Gx-Zp-djF" secondAttribute="trailing" id="eyC-IH-1RH"/>
+                <constraint firstItem="7Gx-Zp-djF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="48" id="h0U-Ux-U2o"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="262.59541984732823" y="20.774647887323944"/>
+        </view>
+    </objects>
+</document>
