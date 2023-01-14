@@ -16,6 +16,10 @@
 		07F3C7402972DE2D00C51D4D /* GuidomiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F3C73F2972DE2D00C51D4D /* GuidomiaTests.swift */; };
 		07F3C74A2972DE2E00C51D4D /* GuidomiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F3C7492972DE2E00C51D4D /* GuidomiaUITests.swift */; };
 		07F3C74C2972DE2E00C51D4D /* GuidomiaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F3C74B2972DE2E00C51D4D /* GuidomiaUITestsLaunchTests.swift */; };
+		07F3C75C2972E84700C51D4D /* ThumbnailTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F3C75A2972E84700C51D4D /* ThumbnailTableCell.swift */; };
+		07F3C75D2972E84700C51D4D /* ThumbnailTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07F3C75B2972E84700C51D4D /* ThumbnailTableCell.xib */; };
+		07F3C7602972EC4200C51D4D /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F3C75F2972EC4200C51D4D /* UITableViewCell+Extension.swift */; };
+		07F3C7622972ED1500C51D4D /* UITableView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F3C7612972ED1400C51D4D /* UITableView+extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		07F3C7452972DE2D00C51D4D /* GuidomiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuidomiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07F3C7492972DE2E00C51D4D /* GuidomiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidomiaUITests.swift; sourceTree = "<group>"; };
 		07F3C74B2972DE2E00C51D4D /* GuidomiaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidomiaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		07F3C75A2972E84700C51D4D /* ThumbnailTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailTableCell.swift; sourceTree = "<group>"; };
+		07F3C75B2972E84700C51D4D /* ThumbnailTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThumbnailTableCell.xib; sourceTree = "<group>"; };
+		07F3C75F2972EC4200C51D4D /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
+		07F3C7612972ED1400C51D4D /* UITableView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,8 @@
 		07F3C7272972DE2B00C51D4D /* Guidomia */ = {
 			isa = PBXGroup;
 			children = (
+				07F3C75E2972EC2D00C51D4D /* extensions */,
+				07F3C7582972E7FA00C51D4D /* views */,
 				07F3C7282972DE2B00C51D4D /* AppDelegate.swift */,
 				07F3C72A2972DE2B00C51D4D /* SceneDelegate.swift */,
 				07F3C72C2972DE2B00C51D4D /* ViewController.swift */,
@@ -125,6 +135,32 @@
 				07F3C74B2972DE2E00C51D4D /* GuidomiaUITestsLaunchTests.swift */,
 			);
 			path = GuidomiaUITests;
+			sourceTree = "<group>";
+		};
+		07F3C7582972E7FA00C51D4D /* views */ = {
+			isa = PBXGroup;
+			children = (
+				07F3C7592972E80100C51D4D /* cells */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		07F3C7592972E80100C51D4D /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				07F3C75A2972E84700C51D4D /* ThumbnailTableCell.swift */,
+				07F3C75B2972E84700C51D4D /* ThumbnailTableCell.xib */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		07F3C75E2972EC2D00C51D4D /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				07F3C75F2972EC4200C51D4D /* UITableViewCell+Extension.swift */,
+				07F3C7612972ED1400C51D4D /* UITableView+extension.swift */,
+			);
+			path = extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +270,7 @@
 				07F3C7352972DE2D00C51D4D /* LaunchScreen.storyboard in Resources */,
 				07F3C7322972DE2D00C51D4D /* Assets.xcassets in Resources */,
 				07F3C7302972DE2B00C51D4D /* Main.storyboard in Resources */,
+				07F3C75D2972E84700C51D4D /* ThumbnailTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +296,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				07F3C72D2972DE2B00C51D4D /* ViewController.swift in Sources */,
+				07F3C7602972EC4200C51D4D /* UITableViewCell+Extension.swift in Sources */,
 				07F3C7292972DE2B00C51D4D /* AppDelegate.swift in Sources */,
+				07F3C7622972ED1500C51D4D /* UITableView+extension.swift in Sources */,
 				07F3C72B2972DE2B00C51D4D /* SceneDelegate.swift in Sources */,
+				07F3C75C2972E84700C51D4D /* ThumbnailTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +484,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -474,6 +515,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
