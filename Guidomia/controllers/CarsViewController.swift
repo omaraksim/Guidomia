@@ -11,11 +11,16 @@ class CarsViewController: UIViewController {
 
     @IBOutlet weak var carsTableView: UITableView!
     
-    var carsViewModel = CarsViewModel()
+    var carsViewModel = CarsViewModel(carService: CarService())
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupTableView()
+        carsViewModel.load {
+            DispatchQueue.main.async {
+                self.carsTableView.reloadData()
+            }
+        }
     }
     
     private func setupTableView(){

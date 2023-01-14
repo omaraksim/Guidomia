@@ -8,10 +8,21 @@
 import UIKit
 
 class CarsViewModel: NSObject {
-    private var cars: [CarViewModel] = []
     
-    override init() {
-        self.cars = Range(1...100).map{ _ in CarViewModel() }
+    private let carService: CarServiceProtocol
+    
+    init(carService: CarServiceProtocol) {
+        self.carService = carService
+    }
+    
+    private var cars: [CarViewModel] = []
+
+    
+    func load(_ complition: () -> ()){
+        self.carService.loadCars { cars in
+            self.cars = cars.map{ CarViewModel(car: $0) }
+            complition()
+        }
     }
     
 }
@@ -43,6 +54,9 @@ extension CarsViewModel: UITableViewDataSource {
             if let cell = tableView.dequeueReusableCell(withIdentifier: CarTableCell.identifier, for: indexPath) as? CarTableCell {
                 let viewModel = cars[indexPath.row]
                 cell.setup(viewModel: viewModel)
+                if tableView.isLast(for: indexPath) {
+                    cell.hideSeparator()
+                }
                 return cell
             }
         }
