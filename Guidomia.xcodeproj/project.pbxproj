@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07C9D8212972FA6400651A9C /* CarsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C9D8202972FA6400651A9C /* CarsViewModel.swift */; };
+		07C9D8232972FAB400651A9C /* CarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C9D8222972FAB400651A9C /* CarViewModel.swift */; };
+		07C9D8252973229200651A9C /* UIColor+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C9D8242973229200651A9C /* UIColor+extensions.swift */; };
 		07F3C7292972DE2B00C51D4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F3C7282972DE2B00C51D4D /* AppDelegate.swift */; };
 		07F3C72B2972DE2B00C51D4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F3C72A2972DE2B00C51D4D /* SceneDelegate.swift */; };
-		07F3C72D2972DE2B00C51D4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F3C72C2972DE2B00C51D4D /* ViewController.swift */; };
+		07F3C72D2972DE2B00C51D4D /* CarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F3C72C2972DE2B00C51D4D /* CarsViewController.swift */; };
 		07F3C7302972DE2B00C51D4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F3C72E2972DE2B00C51D4D /* Main.storyboard */; };
 		07F3C7322972DE2D00C51D4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07F3C7312972DE2D00C51D4D /* Assets.xcassets */; };
 		07F3C7352972DE2D00C51D4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F3C7332972DE2D00C51D4D /* LaunchScreen.storyboard */; };
@@ -20,6 +23,8 @@
 		07F3C75D2972E84700C51D4D /* ThumbnailTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07F3C75B2972E84700C51D4D /* ThumbnailTableCell.xib */; };
 		07F3C7602972EC4200C51D4D /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F3C75F2972EC4200C51D4D /* UITableViewCell+Extension.swift */; };
 		07F3C7622972ED1500C51D4D /* UITableView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F3C7612972ED1400C51D4D /* UITableView+extension.swift */; };
+		07F3C7672972F3EC00C51D4D /* CarTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F3C7652972F3EC00C51D4D /* CarTableCell.swift */; };
+		07F3C7682972F3EC00C51D4D /* CarTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07F3C7662972F3EC00C51D4D /* CarTableCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +45,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07C9D8202972FA6400651A9C /* CarsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsViewModel.swift; sourceTree = "<group>"; };
+		07C9D8222972FAB400651A9C /* CarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewModel.swift; sourceTree = "<group>"; };
+		07C9D8242973229200651A9C /* UIColor+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extensions.swift"; sourceTree = "<group>"; };
 		07F3C7252972DE2B00C51D4D /* Guidomia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guidomia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07F3C7282972DE2B00C51D4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07F3C72A2972DE2B00C51D4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		07F3C72C2972DE2B00C51D4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		07F3C72C2972DE2B00C51D4D /* CarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsViewController.swift; sourceTree = "<group>"; };
 		07F3C72F2972DE2B00C51D4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07F3C7312972DE2D00C51D4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07F3C7342972DE2D00C51D4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +65,8 @@
 		07F3C75B2972E84700C51D4D /* ThumbnailTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThumbnailTableCell.xib; sourceTree = "<group>"; };
 		07F3C75F2972EC4200C51D4D /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
 		07F3C7612972ED1400C51D4D /* UITableView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+extension.swift"; sourceTree = "<group>"; };
+		07F3C7652972F3EC00C51D4D /* CarTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTableCell.swift; sourceTree = "<group>"; };
+		07F3C7662972F3EC00C51D4D /* CarTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarTableCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +94,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07C9D81E2972F9E100651A9C /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				07F3C72C2972DE2B00C51D4D /* CarsViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		07C9D81F2972FA3200651A9C /* viewModels */ = {
+			isa = PBXGroup;
+			children = (
+				07C9D8202972FA6400651A9C /* CarsViewModel.swift */,
+				07C9D8222972FAB400651A9C /* CarViewModel.swift */,
+			);
+			path = viewModels;
+			sourceTree = "<group>";
+		};
 		07F3C71C2972DE2B00C51D4D = {
 			isa = PBXGroup;
 			children = (
@@ -107,15 +134,16 @@
 		07F3C7272972DE2B00C51D4D /* Guidomia */ = {
 			isa = PBXGroup;
 			children = (
-				07F3C75E2972EC2D00C51D4D /* extensions */,
-				07F3C7582972E7FA00C51D4D /* views */,
+				07F3C7362972DE2D00C51D4D /* Info.plist */,
 				07F3C7282972DE2B00C51D4D /* AppDelegate.swift */,
 				07F3C72A2972DE2B00C51D4D /* SceneDelegate.swift */,
-				07F3C72C2972DE2B00C51D4D /* ViewController.swift */,
-				07F3C72E2972DE2B00C51D4D /* Main.storyboard */,
 				07F3C7312972DE2D00C51D4D /* Assets.xcassets */,
+				07C9D81E2972F9E100651A9C /* controllers */,
+				07F3C75E2972EC2D00C51D4D /* extensions */,
 				07F3C7332972DE2D00C51D4D /* LaunchScreen.storyboard */,
-				07F3C7362972DE2D00C51D4D /* Info.plist */,
+				07F3C72E2972DE2B00C51D4D /* Main.storyboard */,
+				07C9D81F2972FA3200651A9C /* viewModels */,
+				07F3C7582972E7FA00C51D4D /* views */,
 			);
 			path = Guidomia;
 			sourceTree = "<group>";
@@ -148,8 +176,8 @@
 		07F3C7592972E80100C51D4D /* cells */ = {
 			isa = PBXGroup;
 			children = (
-				07F3C75A2972E84700C51D4D /* ThumbnailTableCell.swift */,
-				07F3C75B2972E84700C51D4D /* ThumbnailTableCell.xib */,
+				07F3C7642972F3C300C51D4D /* thumbnail */,
+				07F3C7632972F3A400C51D4D /* car */,
 			);
 			path = cells;
 			sourceTree = "<group>";
@@ -159,8 +187,27 @@
 			children = (
 				07F3C75F2972EC4200C51D4D /* UITableViewCell+Extension.swift */,
 				07F3C7612972ED1400C51D4D /* UITableView+extension.swift */,
+				07C9D8242973229200651A9C /* UIColor+extensions.swift */,
 			);
 			path = extensions;
+			sourceTree = "<group>";
+		};
+		07F3C7632972F3A400C51D4D /* car */ = {
+			isa = PBXGroup;
+			children = (
+				07F3C7652972F3EC00C51D4D /* CarTableCell.swift */,
+				07F3C7662972F3EC00C51D4D /* CarTableCell.xib */,
+			);
+			path = car;
+			sourceTree = "<group>";
+		};
+		07F3C7642972F3C300C51D4D /* thumbnail */ = {
+			isa = PBXGroup;
+			children = (
+				07F3C75A2972E84700C51D4D /* ThumbnailTableCell.swift */,
+				07F3C75B2972E84700C51D4D /* ThumbnailTableCell.xib */,
+			);
+			path = thumbnail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07F3C7352972DE2D00C51D4D /* LaunchScreen.storyboard in Resources */,
+				07F3C7682972F3EC00C51D4D /* CarTableCell.xib in Resources */,
 				07F3C7322972DE2D00C51D4D /* Assets.xcassets in Resources */,
 				07F3C7302972DE2B00C51D4D /* Main.storyboard in Resources */,
 				07F3C75D2972E84700C51D4D /* ThumbnailTableCell.xib in Resources */,
@@ -295,11 +343,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07F3C72D2972DE2B00C51D4D /* ViewController.swift in Sources */,
+				07F3C7672972F3EC00C51D4D /* CarTableCell.swift in Sources */,
+				07F3C72D2972DE2B00C51D4D /* CarsViewController.swift in Sources */,
 				07F3C7602972EC4200C51D4D /* UITableViewCell+Extension.swift in Sources */,
+				07C9D8212972FA6400651A9C /* CarsViewModel.swift in Sources */,
 				07F3C7292972DE2B00C51D4D /* AppDelegate.swift in Sources */,
 				07F3C7622972ED1500C51D4D /* UITableView+extension.swift in Sources */,
 				07F3C72B2972DE2B00C51D4D /* SceneDelegate.swift in Sources */,
+				07C9D8252973229200651A9C /* UIColor+extensions.swift in Sources */,
+				07C9D8232972FAB400651A9C /* CarViewModel.swift in Sources */,
 				07F3C75C2972E84700C51D4D /* ThumbnailTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
