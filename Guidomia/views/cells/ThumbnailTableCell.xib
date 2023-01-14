@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="250" id="KGk-i7-Jjw" customClass="ThumbnailTableCell" customModule="Guidomia" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="402" height="238"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="402" height="238"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tacoma" translatesAutoresizingMaskIntoConstraints="NO" id="T6n-aT-XmR">
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="238"/>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Lr3-zD-cCM">
+                        <rect key="frame" x="16" y="163" width="370" height="51"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tacoma 2021" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XqX-c9-GrZ">
+                                <rect key="frame" x="0.0" y="0.0" width="370" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lYB-bs-j7x">
+                                <rect key="frame" x="0.0" y="36" width="370" height="15"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get your's now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Sv-IF-hJn">
+                                        <rect key="frame" x="4" y="0.0" width="366" height="15"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="0Sv-IF-hJn" firstAttribute="top" secondItem="lYB-bs-j7x" secondAttribute="top" id="8zl-Od-3v4"/>
+                                    <constraint firstAttribute="height" constant="15" id="Hab-fH-QcD"/>
+                                    <constraint firstAttribute="trailing" secondItem="0Sv-IF-hJn" secondAttribute="trailing" id="aR9-9P-q5m"/>
+                                    <constraint firstItem="0Sv-IF-hJn" firstAttribute="leading" secondItem="lYB-bs-j7x" secondAttribute="leading" constant="4" id="bJ6-Dd-DCX"/>
+                                    <constraint firstAttribute="bottom" secondItem="0Sv-IF-hJn" secondAttribute="bottom" id="pbW-ME-fTV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Lr3-zD-cCM" secondAttribute="bottom" constant="24" id="9BW-8A-bhO"/>
+                    <constraint firstAttribute="bottom" secondItem="T6n-aT-XmR" secondAttribute="bottom" id="NLj-pF-14K"/>
+                    <constraint firstItem="Lr3-zD-cCM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="SQI-Ao-prQ"/>
+                    <constraint firstItem="T6n-aT-XmR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="f3J-ms-DyY"/>
+                    <constraint firstAttribute="trailing" secondItem="Lr3-zD-cCM" secondAttribute="trailing" constant="16" id="qQT-hW-jqw"/>
+                    <constraint firstItem="T6n-aT-XmR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="wdb-zd-khn"/>
+                    <constraint firstAttribute="trailing" secondItem="T6n-aT-XmR" secondAttribute="trailing" id="wjp-Jm-aE0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="189.31297709923663" y="88.028169014084511"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Tacoma" width="5472" height="3648"/>
+    </resources>
+</document>
