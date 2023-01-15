@@ -24,7 +24,7 @@ class CarViewModel {
     }
     
     var price: String {
-        var formatedPrice = String(format: "%@", car.customerPrice)
+        var formatedPrice = String(format: "%f", car.customerPrice)
         let price = car.customerPrice
         let thousand = price / 1000
         let million = price / 1000000
@@ -36,6 +36,14 @@ class CarViewModel {
         }
         
         return String(format: "Price: %@", formatedPrice)
+    }
+    
+    var model: String {
+        car.model
+    }
+    
+    var make: String {
+        car.make
     }
     
     var rating: Int {

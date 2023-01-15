@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0772D8C02974391600E26F99 /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0772D8BE2974391600E26F99 /* FilterCell.swift */; };
+		0772D8C12974391600E26F99 /* FilterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0772D8BF2974391600E26F99 /* FilterCell.xib */; };
+		0772D8C329745B9000E26F99 /* FilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0772D8C229745B9000E26F99 /* FilterViewModel.swift */; };
+		0772D8C529746D8500E26F99 /* CarScreenSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0772D8C429746D8500E26F99 /* CarScreenSection.swift */; };
 		07C9D8212972FA6400651A9C /* CarsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C9D8202972FA6400651A9C /* CarsViewModel.swift */; };
 		07C9D8232972FAB400651A9C /* CarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C9D8222972FAB400651A9C /* CarViewModel.swift */; };
 		07C9D8252973229200651A9C /* UIColor+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C9D8242973229200651A9C /* UIColor+extensions.swift */; };
@@ -51,6 +55,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0772D8BE2974391600E26F99 /* FilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
+		0772D8BF2974391600E26F99 /* FilterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterCell.xib; sourceTree = "<group>"; };
+		0772D8C229745B9000E26F99 /* FilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewModel.swift; sourceTree = "<group>"; };
+		0772D8C429746D8500E26F99 /* CarScreenSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarScreenSection.swift; sourceTree = "<group>"; };
 		07C9D8202972FA6400651A9C /* CarsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsViewModel.swift; sourceTree = "<group>"; };
 		07C9D8222972FAB400651A9C /* CarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewModel.swift; sourceTree = "<group>"; };
 		07C9D8242973229200651A9C /* UIColor+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extensions.swift"; sourceTree = "<group>"; };
@@ -106,6 +114,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0772D8BD297438FE00E26F99 /* filter */ = {
+			isa = PBXGroup;
+			children = (
+				0772D8BE2974391600E26F99 /* FilterCell.swift */,
+				0772D8BF2974391600E26F99 /* FilterCell.xib */,
+			);
+			path = filter;
+			sourceTree = "<group>";
+		};
 		07C9D81E2972F9E100651A9C /* controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +136,7 @@
 			children = (
 				07C9D8202972FA6400651A9C /* CarsViewModel.swift */,
 				07C9D8222972FAB400651A9C /* CarViewModel.swift */,
+				0772D8C229745B9000E26F99 /* FilterViewModel.swift */,
 			);
 			path = viewModels;
 			sourceTree = "<group>";
@@ -153,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				07C9D8302973310500651A9C /* Car.swift */,
+				0772D8C429746D8500E26F99 /* CarScreenSection.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -234,6 +253,7 @@
 		07F3C7592972E80100C51D4D /* cells */ = {
 			isa = PBXGroup;
 			children = (
+				0772D8BD297438FE00E26F99 /* filter */,
 				07F3C7642972F3C300C51D4D /* thumbnail */,
 				07F3C7632972F3A400C51D4D /* car */,
 			);
@@ -377,6 +397,7 @@
 				07F3C7322972DE2D00C51D4D /* Assets.xcassets in Resources */,
 				07F3C7302972DE2B00C51D4D /* Main.storyboard in Resources */,
 				07C9D82929732E8900651A9C /* car_list.json in Resources */,
+				0772D8C12974391600E26F99 /* FilterCell.xib in Resources */,
 				07F3C75D2972E84700C51D4D /* ThumbnailTableCell.xib in Resources */,
 				07C9D8362973591B00651A9C /* BulletView.xib in Resources */,
 			);
@@ -405,8 +426,11 @@
 			files = (
 				07F3C7672972F3EC00C51D4D /* CarTableCell.swift in Sources */,
 				07F3C72D2972DE2B00C51D4D /* CarsViewController.swift in Sources */,
+				0772D8C329745B9000E26F99 /* FilterViewModel.swift in Sources */,
 				07C9D8342973590B00651A9C /* BulletView.swift in Sources */,
 				07F3C7602972EC4200C51D4D /* UITableViewCell+Extension.swift in Sources */,
+				0772D8C529746D8500E26F99 /* CarScreenSection.swift in Sources */,
+				0772D8C02974391600E26F99 /* FilterCell.swift in Sources */,
 				07C9D82E29732FD800651A9C /* ServiceProtocol.swift in Sources */,
 				07C9D8312973310500651A9C /* Car.swift in Sources */,
 				07C9D82C29732F4C00651A9C /* CarService.swift in Sources */,

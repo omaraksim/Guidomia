@@ -40,8 +40,8 @@ class CarTableCell: UITableViewCell {
         DispatchQueue.main.async {
             debugPrint(viewModel.thumbnail)
             self.thumbnail.image = UIImage(named: viewModel.thumbnail)
-            self.separatorContainer.isHidden = false
         }
+        self.separatorContainer.isHidden = false
         self.nameLabel.text = viewModel.name
         self.priceLabel.text = viewModel.price
         self.setupRating(viewModel.rating)
@@ -84,9 +84,7 @@ class CarTableCell: UITableViewCell {
     }
     
     func hideSeparator() {
-        DispatchQueue.main.async {
-            self.separatorContainer.isHidden = true
-        }
+        self.separatorContainer.isHidden = true
     }
     
 }
