@@ -28,15 +28,32 @@ class CarsViewModel: NSObject {
     weak var delegate: CarsTableEventDelegate?
     
     func load(){
+        self.carService.findAll { [weak self] savedCars in
+            guard let strong = self else { return }
+            if savedCars.isEmpty {
+                strong.loadFromFile()
+            }else{
+                strong.updateData(savedCars)
+                strong.delegate?.reloadData()
+            }
+        }
+    }
+    
+    private func loadFromFile(){
         self.carService.loadCars { [weak self] cars in
             guard let strong = self else { return }
-            strong.cars = cars.map{ CarViewModel(car: $0) }
-            strong.models = cars.map { $0.model }
-            strong.makes = cars.map { $0.make }
+            strong.updateData(cars)
+            strong.carService.save(cars: cars, complition: nil)
             strong.delegate?.reloadData()
         }
     }
     
+    
+    private func updateData(_ cars: [Car]){
+        self.cars = cars.map{ CarViewModel(car: $0) }
+        self.models = cars.map { $0.model }
+        self.makes = cars.map { $0.make }
+    }
     
 }
 

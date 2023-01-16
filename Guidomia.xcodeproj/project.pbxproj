@@ -11,6 +11,11 @@
 		0772D8C12974391600E26F99 /* FilterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0772D8BF2974391600E26F99 /* FilterCell.xib */; };
 		0772D8C329745B9000E26F99 /* FilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0772D8C229745B9000E26F99 /* FilterViewModel.swift */; };
 		0772D8C529746D8500E26F99 /* CarScreenSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0772D8C429746D8500E26F99 /* CarScreenSection.swift */; };
+		0772D8C829757EDC00E26F99 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0772D8C729757EDC00E26F99 /* RealmSwift */; };
+		0772D8CB2975805A00E26F99 /* CarEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0772D8CA2975805A00E26F99 /* CarEntity.swift */; };
+		0772D8CE2975835500E26F99 /* Persistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0772D8CD2975835500E26F99 /* Persistable.swift */; };
+		0772D8D0297584BC00E26F99 /* WriteTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0772D8CF297584BC00E26F99 /* WriteTransaction.swift */; };
+		0772D8D2297584F400E26F99 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0772D8D1297584F400E26F99 /* Container.swift */; };
 		07C9D8212972FA6400651A9C /* CarsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C9D8202972FA6400651A9C /* CarsViewModel.swift */; };
 		07C9D8232972FAB400651A9C /* CarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C9D8222972FAB400651A9C /* CarViewModel.swift */; };
 		07C9D8252973229200651A9C /* UIColor+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C9D8242973229200651A9C /* UIColor+extensions.swift */; };
@@ -59,6 +64,10 @@
 		0772D8BF2974391600E26F99 /* FilterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterCell.xib; sourceTree = "<group>"; };
 		0772D8C229745B9000E26F99 /* FilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewModel.swift; sourceTree = "<group>"; };
 		0772D8C429746D8500E26F99 /* CarScreenSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarScreenSection.swift; sourceTree = "<group>"; };
+		0772D8CA2975805A00E26F99 /* CarEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarEntity.swift; sourceTree = "<group>"; };
+		0772D8CD2975835500E26F99 /* Persistable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistable.swift; sourceTree = "<group>"; };
+		0772D8CF297584BC00E26F99 /* WriteTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteTransaction.swift; sourceTree = "<group>"; };
+		0772D8D1297584F400E26F99 /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
 		07C9D8202972FA6400651A9C /* CarsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsViewModel.swift; sourceTree = "<group>"; };
 		07C9D8222972FAB400651A9C /* CarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewModel.swift; sourceTree = "<group>"; };
 		07C9D8242973229200651A9C /* UIColor+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extensions.swift"; sourceTree = "<group>"; };
@@ -94,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0772D8C829757EDC00E26F99 /* RealmSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +131,24 @@
 				0772D8BF2974391600E26F99 /* FilterCell.xib */,
 			);
 			path = filter;
+			sourceTree = "<group>";
+		};
+		0772D8C92975802800E26F99 /* entities */ = {
+			isa = PBXGroup;
+			children = (
+				0772D8CA2975805A00E26F99 /* CarEntity.swift */,
+			);
+			path = entities;
+			sourceTree = "<group>";
+		};
+		0772D8CC2975833200E26F99 /* repo */ = {
+			isa = PBXGroup;
+			children = (
+				0772D8CD2975835500E26F99 /* Persistable.swift */,
+				0772D8CF297584BC00E26F99 /* WriteTransaction.swift */,
+				0772D8D1297584F400E26F99 /* Container.swift */,
+			);
+			path = repo;
 			sourceTree = "<group>";
 		};
 		07C9D81E2972F9E100651A9C /* controllers */ = {
@@ -161,6 +189,7 @@
 		07C9D82A29732F2A00651A9C /* services */ = {
 			isa = PBXGroup;
 			children = (
+				0772D8CC2975833200E26F99 /* repo */,
 				07C9D82B29732F4C00651A9C /* CarService.swift */,
 				07C9D82D29732FD800651A9C /* ServiceProtocol.swift */,
 			);
@@ -170,6 +199,7 @@
 		07C9D82F297330AC00651A9C /* models */ = {
 			isa = PBXGroup;
 			children = (
+				0772D8C92975802800E26F99 /* entities */,
 				07C9D8302973310500651A9C /* Car.swift */,
 				0772D8C429746D8500E26F99 /* CarScreenSection.swift */,
 			);
@@ -304,6 +334,9 @@
 			dependencies = (
 			);
 			name = Guidomia;
+			packageProductDependencies = (
+				0772D8C729757EDC00E26F99 /* RealmSwift */,
+			);
 			productName = Guidomia;
 			productReference = 07F3C7252972DE2B00C51D4D /* Guidomia.app */;
 			productType = "com.apple.product-type.application";
@@ -376,6 +409,9 @@
 				Base,
 			);
 			mainGroup = 07F3C71C2972DE2B00C51D4D;
+			packageReferences = (
+				0772D8C629757EDC00E26F99 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 07F3C7262972DE2B00C51D4D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -428,15 +464,19 @@
 				07F3C72D2972DE2B00C51D4D /* CarsViewController.swift in Sources */,
 				0772D8C329745B9000E26F99 /* FilterViewModel.swift in Sources */,
 				07C9D8342973590B00651A9C /* BulletView.swift in Sources */,
+				0772D8D2297584F400E26F99 /* Container.swift in Sources */,
 				07F3C7602972EC4200C51D4D /* UITableViewCell+Extension.swift in Sources */,
 				0772D8C529746D8500E26F99 /* CarScreenSection.swift in Sources */,
 				0772D8C02974391600E26F99 /* FilterCell.swift in Sources */,
 				07C9D82E29732FD800651A9C /* ServiceProtocol.swift in Sources */,
 				07C9D8312973310500651A9C /* Car.swift in Sources */,
+				0772D8CE2975835500E26F99 /* Persistable.swift in Sources */,
 				07C9D82C29732F4C00651A9C /* CarService.swift in Sources */,
 				07C9D8212972FA6400651A9C /* CarsViewModel.swift in Sources */,
 				07F3C7292972DE2B00C51D4D /* AppDelegate.swift in Sources */,
 				07F3C7622972ED1500C51D4D /* UITableView+extension.swift in Sources */,
+				0772D8D0297584BC00E26F99 /* WriteTransaction.swift in Sources */,
+				0772D8CB2975805A00E26F99 /* CarEntity.swift in Sources */,
 				07F3C72B2972DE2B00C51D4D /* SceneDelegate.swift in Sources */,
 				07C9D8252973229200651A9C /* UIColor+extensions.swift in Sources */,
 				07C9D8232972FAB400651A9C /* CarViewModel.swift in Sources */,
@@ -788,6 +828,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0772D8C629757EDC00E26F99 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 10.34.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0772D8C729757EDC00E26F99 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0772D8C629757EDC00E26F99 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 07F3C71D2972DE2B00C51D4D /* Project object */;
 }
