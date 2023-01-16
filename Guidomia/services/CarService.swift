@@ -9,6 +9,8 @@ import Foundation
 
 protocol CarServiceProtocol: ServiceProtocol {
     func loadCars(complition: ([Car]) -> ())
+    func findAll(complition: ([Car]) -> ())
+    func save(cars: [Car], complition: ((Bool) -> ())?)
 }
 
 class CarService: CarServiceProtocol {
@@ -21,6 +23,30 @@ class CarService: CarServiceProtocol {
         }else{
             complition([])
         }
+    }
+    
+    func findAll(complition: ([Car]) -> ()){
+        do {
+            let container = try Container()
+            let entities: [CarEntity] = container.readAll()
+            complition(entities.map{ Car(managedObject: $0)})
+        }catch {
+            complition([])
+        }
+    }
+    
+    func save(cars: [Car], complition: ((Bool) -> ())? = nil ) {
+        do {
+            let container = try Container()
+            try container.write { transaction in
+                transaction.add(cars)
+            }
+            complition?(true)
+        }catch {
+            complition?(false)
+        }
+        
+        
     }
     
 }
